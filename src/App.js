@@ -12,7 +12,7 @@ function App() {
       <div className="app_page">
         <Sidebar/>
         <RecommendedVideos/>
-         {/* SIde bar */}
+         {/* Sde bar */}
          {/* RecommendedVideos */}
       </div>
      

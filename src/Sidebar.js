@@ -1,9 +1,31 @@
 import React from 'react'
+import SidebarRow from "./SidebarRow"
+import HomeIcon from '@material-ui/icons/Home';
+import WhatshotIcon from '@material-ui/icons/Whatshot';
+import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
+import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
+import HistoryIcon from '@material-ui/icons/History';
+import WatchLaterIcon from '@material-ui/icons/WatchLater';
+import OndemandVideoIcon from '@material-ui/icons/OndemandVideo';
+import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
+import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
+
+import "./Sidebar.css"
 
 function Sidebar() {
     return (
-        <div>
-            <h1>Here is sidebar</h1>
+        <div className="sidebar">
+            <SidebarRow sss Icon={HomeIcon} title="Home"/>
+            <SidebarRow Icon={WhatshotIcon} title="Trending"/>
+            <SidebarRow Icon={SubscriptionsIcon} title="Subscriptions"/>
+            <hr/>
+            <SidebarRow Icon={VideoLibraryIcon} title="Library"/>
+            <SidebarRow Icon={HistoryIcon} title="History"/>
+            <SidebarRow Icon={WatchLaterIcon} title="Your Videos"/>
+            <SidebarRow Icon={OndemandVideoIcon} title="Watch Later"/>
+            <SidebarRow Icon={ThumbUpAltOutlinedIcon} title="Liked Videos"/>
+            <SidebarRow Icon={ExpandMoreOutlinedIcon} title="Show more"/>
+            <hr />
         </div>
     )
 }
