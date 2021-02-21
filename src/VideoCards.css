@@ -1,0 +1,8 @@
+.videoCard{
+    width: 279px;
+    /* display: flex; */
+}
+.videoCard__image{
+    height: 140px;
+    width: 250px;
+}

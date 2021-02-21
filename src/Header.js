@@ -5,7 +5,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications'; 
-import PersonIcon from '@material-ui/icons/Person';
+// import PersonIcon from '@material-ui/icons/Person';
+import Avatar from "@material-ui/core/Avatar";
+
 
 // Quazi 46:00 said pattern recognition
 function Header() {
@@ -27,7 +29,7 @@ function Header() {
                 <VideoCallIcon className="header_icon"/>
                 <AppsIcon className="header_icon"/>
                 <NotificationsIcon className="header_icon"/>
-                <PersonIcon className="header_icon"/>
+                <Avatar className="header_icon"/>
             </div>  
         </div>
     )
