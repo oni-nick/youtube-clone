@@ -6,13 +6,13 @@ function VideoCards({ image, title, channel, views, timestamp, channelImage}) {
     return (
         <div className="videoCard">
             <img className="videoCard__image" src={image} alt="clone"/>
-            <div className="video__info">
+            <div className="videoCard__info">
                     <Avatar
                         className="videoCard__avatar"
                         alt={channel}
                         src={channelImage}
                     />
-                    <div className="video__text">
+                    <div className="videoCard_text">
                     <h4>{title}</h4>
                     <p>{channel}</p>
                     <p>
@@ -21,6 +21,6 @@ function VideoCards({ image, title, channel, views, timestamp, channelImage}) {
                     </div>                    
             </div>
         </div>
-    )
+    );
 }
 export default VideoCards
